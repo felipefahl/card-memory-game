@@ -13,7 +13,7 @@
    ```
 2. Navigate to the project directory:
    ```bash
-   cd texaslabs
+   cd card-memory-game
    ```
 3. Set up the backend:
    ```bash
