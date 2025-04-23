@@ -1,0 +1,160 @@
+/* Import space-inspired fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+/* Background container */
+.backgroundContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(30, 30, 46, 0.85);
+  border: 2px solid #9a8c98;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 8px 16px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 36px;
+  color: #fbff00;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #f7eaa1;
+  animation: none
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 36px;
+  color: #f8cb03;
+  margin: 0;
+  text-shadow: 0 0 10px #ebd386;
+}
+
+.input {
+  width: 95%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 2px solid #4a4e69;
+  background: rgba(70, 70, 90, 0.6);
+  color: #ffffff;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.button {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 2px solid #9a8c98;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 14px;
+  background: linear-gradient(90deg, #f8f407, #f0e876);
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #5a5e79, #32323b);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  color: #85d1e0;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 12px;
+  text-shadow: 0 0 5px rgba(133, 209, 224, 0.7);
+}
+
+.backButtonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.backButton {
+  display: inline-block;
+  color: #ffcc00;
+  text-decoration: none;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 12px;
+  padding: 8px 15px;
+  border: 2px solid #9a8c98;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4a4e69, #22223b);
+  transition: color 0.3s, text-shadow 0.3s, transform 0.2s, background 0.3s;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #5a5e79, #32323b);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    max-width: 85%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .backButton {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}
